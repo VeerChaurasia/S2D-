@@ -1,0 +1,151 @@
+.navbar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+    
+    font-family: Overpass,Roboto,sans-serif;
+
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    color:#f6f6f6;
+    margin: 1rem;
+    z-index: 5;
+
+}
+
+.hamburger{
+    display: none;
+    padding: 1rem;
+}
+
+.mobile{
+    display: none;
+    
+}
+
+.navmenu{
+    display: flex;
+    
+}
+
+.navmenu li{
+    padding: 2rem;
+    
+    
+}
+
+.navmenu li:hover{
+    border-radius: 10px;
+    color: green !important;
+    
+}
+
+
+
+
+.navmenu li a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    
+
+}
+
+
+
+
+@media screen and (max-width: 940px){
+    .hamburger{
+        display: block;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navmenu{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+        background: var(--primary-color);
+        top: 0;
+        right: -100%;
+    }
+
+    .active{
+        right: 0;
+    }
+
+    .navmenu li{
+        margin: 0.1rem;
+        
+
+    }
+
+    .navmenu li a{
+        font-size: 1.3rem;
+    }
+
+    /* .navmenu li:hover{
+        border-bottom: 1px solid #aaa;
+        width: 175px;
+    } */
+
+    .navmenu button{
+        margin: 1rem auto;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        border: none;
+        background: rgba(255, 255, 255, 0.3);
+        width: 75%;
+        color: #f6f6f6;
+        cursor: pointer;
+    }
+    .navmenu button:hover{
+        background: #a881af;
+    }
+
+    .navmenu .social-icons{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+    .navmenu .icons{
+        color:antiquewhite;
+        font-size: 2rem;
+    }
+
+    .hide{
+        display: none;
+    }
+    .navbar .slide-right{
+        margin-left: 45%;
+        transition: .8s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 495px){
+    .navmenu{
+        width: 75%;
+    }
+    .navbar .slide-right{
+        margin-left: 30%;
+        transition: .8s ease-in-out;
+    }
+}

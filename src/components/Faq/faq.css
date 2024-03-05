@@ -1,0 +1,202 @@
+/* ### Primary
+
+  #### Text
+
+  - Very dark desaturated blue: hsl(238, 29%, 16%)
+  - Soft red: hsl(14, 88%, 65%)
+
+  ### Neutral
+
+  #### Text
+
+  - Very dark grayish blue: hsl(237, 12%, 33%)
+  - Dark grayish blue: hsl(240, 6%, 50%)
+
+  #### Dividers
+
+  - Light grayish blue: hsl(240, 5%, 91%) */
+
+  @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+  
+  .faq-accordion {
+    font-size: 12px;
+    font-family: "Kumbh Sans", sans-serif;
+    min-height: 110vh;
+    height: 100%;
+    background: url(../../assests/Instagram\ post\ -\ 78.svg) no-repeat center center/cover ;
+    position: relative;
+    padding-top: 80px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .faq-accordion-container {
+    width: 1000px;
+    /* border: 1px solid red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 120px;
+    padding-bottom: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+  }
+  
+  .faq-accordion-container:before {
+    content: url('./assests/faq-accordion-card-main/images/illustration-woman-online-mobile.svg');
+    position: absolute;
+    width: 250px;
+    top: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .faq-accordion-content {
+    /* border: 1px solid red; */
+  }
+  
+  .faq-accordion-content-container {
+  }
+  
+  .faq-accordion-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(238, 29%, 16%);
+    font-size: 32px;
+  }
+  .faq-accordion-question {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-bottom: 10px;
+  }
+  
+  .faq-accordion-question-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 10px 0;
+    background: transparent;
+    color: hsl(237, 12%, 33%);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .faq-accordion-question-button:hover {
+    color: hsl(14, 88%, 65%);
+  }
+  
+  .faq-accordion-question-button:after {
+    content: url(./assests/faq-accordion-card-main/images/icon-arrow-down.svg);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .faq-accordion-question-button-active {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+  }
+  
+  .faq-accordion-question-button-active:after {
+    transform: rotate(180deg);
+  }
+  
+  .faq-accordion-question-button-active:hover {
+    color: hsl(238, 29%, 16%);
+  }
+  
+  .faq-accordion-answer {
+    color: hsl(240, 6%, 50%);
+    height: 0px;
+    min-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .faq-accordion-answer-active {
+    /* max-height: 100px; */
+    min-height: 50px;
+  }
+  
+  /* @media only screen and (min-width: 800px) { */
+    .faq-accordion-container {
+      height: 75%;
+      width: 80vw;
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 50px;
+  
+      background: url("./assests/faq-accordion-card-main/images/illustration-woman-online-desktop.svg")
+          bottom 3.1rem left -5.1rem no-repeat,
+        url("./assests/faq-accordion-card-main/images/bg-pattern-desktop.svg")
+          bottom -10rem left -36rem no-repeat;
+  
+      background-color: white;
+    }
+    .faq-accordion-question-button{
+        font-size: 20px;
+    }
+    .faq-accordion-question {
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+  
+    .faq-accordion-container:before {
+      content: url("./assests/faq-accordion-card-main/images/illustration-box-desktop.svg");
+      top: 60%;
+      left: 3.5%;
+      transform: translate(-50%, -55%);
+      width: 140px;
+      height: 190px;
+      animation: dropbox 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+  
+    @keyframes dropbox {
+      from {
+        top: 15%;
+        opacity: 0;
+      }
+      to {
+        top: 60%;
+      }
+    }
+  
+    .faq-accordion-content {
+      padding-top: 40px;
+      width: 50%;
+    }
+  
+    .faq-accordion-title {
+      text-align: left;
+    }
+  /* } */
+  @media only screen and (max-width: 800px) {
+    .faq-accordion-container:before {
+        top: 60%;
+        left: 3.5%;
+        transform: translate(-50%, -55%);
+        width: 140px;
+        height: 190px;
+    }
+    .faq-accordion-container {
+        height: 75%;
+        width: 80vw;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 50px;
+    
+        
+        background-color: white;
+      }
+      .faq-accordion-container:before {
+        content: url('./assests/faq-accordion-card-main/images/illustration-woman-online-mobile.svg');
+        position: absolute;
+        width: 250px;
+        top: -115px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  }

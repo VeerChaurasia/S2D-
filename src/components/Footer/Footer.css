@@ -1,0 +1,23 @@
+.Footer{
+    height: 15vh;
+    background-color: antiquewhite;
+    margin-top: 0;
+    
+}
+.text{
+    align-items: center;
+    direction: flex;
+    
+    font-size: 30px
+    
+}
+.social{
+        display: flex;
+        justify-content:space-evenly;
+        margin: 1rem;
+    
+}
+.icons{
+    font-size: 40px;
+    color: black;
+}

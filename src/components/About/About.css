@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap');
+.main{
+    background: url(../../assests/Instagram\ post\ -\ 78.svg) no-repeat center center/cover ;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+}
+.about{
+    color: #b1fc03;
+}
+.info1{
+    /* height:100vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 8.5rem; */
+    
+    width: 100vw;
+    padding: 0 80px;
+    
+    
+    
+    
+    
+}
+.paras{
+    color: #ffffff99;
+    display: flex;
+    margin-top: 10rem;
+    flex-direction: row;
+    font-size: large;
+    /* margin-left: 2rem; */
+    margin-top: 0;
+    max-width: 900px;
+    /* padding-left: 80px; */
+    
+}
+.text{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-between; */
+    
+}
+.big{
+    font-size: 50px;
+    color: #b1fc03;
+    margin-bottom: 1.87rem;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-family: "Orbitron", sans-serif;
+}
+.small{
+    font-size: 25px;
+    font-family: "Oxanium", sans-serif;
+    opacity: 70%;
+    
+}
+.ret{
+    height: 30vh;
+    width: 20vw;
+    margin: auto;
+    padding-top: 2vw;
+    
+
+}
+.image1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* margin-top: 2rem;
+    margin-left: 5rem; */
+     
+}
+@media screen and (max-width: 940px){
+    .info1{
+        flex-direction: column;
+    }
+    .ret{
+        width: 70vw;
+        height: 50vw;
+    }
+}

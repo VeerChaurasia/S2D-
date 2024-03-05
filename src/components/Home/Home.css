@@ -1,0 +1,10 @@
+.Home{
+    width: 100%;
+    height: 100vh;
+    background: url(../../assests/Instagram\ post\ -\ 77.svg) no-repeat center center/cover ;
+
+}
+.bottom{
+    color: blueviolet;
+    justify-content: end;
+}
